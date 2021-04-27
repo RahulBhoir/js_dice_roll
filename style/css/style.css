@@ -1,0 +1,44 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Sansita Swashed', cursive;
+    color: #707070;
+}
+body{
+    background-color: #bedbbb;
+}
+h1{
+    height: 3.5em;
+    width: 100vm;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 0%;
+    font-size: 3em;
+}
+
+div{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-areas: '. dice1img . dice2img .'
+    '. player1emoji . player2emoji . ';
+}
+
+#dice1{
+grid-area: dice1img;
+}
+
+#dice2{
+grid-area: dice2img;
+}
+
+h2{
+    font-size: 2.5em;
+}
+#player1{
+    grid-area: player1emoji;
+    text-align: center;
+}
+#player2{
+    grid-area: player2emoji;
+    text-align: center;
+}
